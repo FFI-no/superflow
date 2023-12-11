@@ -1,0 +1,13 @@
+.devcontainer
+.idea
+.vs
+.vscode
+*.tag
+3rd-party
+build
+cmake-build*
+CMakeSettings.json
+CMakeUserPresets.json
+html
+latex
+lib_path.h

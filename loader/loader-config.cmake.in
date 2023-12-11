@@ -1,0 +1,9 @@
+@PACKAGE_INIT@
+message(STATUS "*  Found @CMAKE_PROJECT_NAME@::@PROJECT_NAME@: " "${CMAKE_CURRENT_LIST_FILE}")
+include(CMakeFindDependencyMacro)
+find_dependency(Boost COMPONENTS system filesystem)
+
+set(@CMAKE_PROJECT_NAME@_@PROJECT_NAME@_FOUND TRUE)
+
+check_required_components(@PROJECT_NAME@)
+message(STATUS "*  Loading @CMAKE_PROJECT_NAME@::@PROJECT_NAME@ complete")
